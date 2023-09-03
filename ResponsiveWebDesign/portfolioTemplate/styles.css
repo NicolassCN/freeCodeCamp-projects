@@ -71,31 +71,31 @@ footer {
     margin-bottom: 30px;
 }
 
-.project {
+.project-tile {
     margin-bottom: 30px;
 }
 
-.project img {
+.project-tile img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.project h3 {
+.project-tile h3 {
     font-size: 24px;
     margin: 0;
 }
 
-.project p {
+.project-tile p {
     font-size: 18px;
     margin: 10px 0;
 }
 
-.project:nth-child(odd) {
+.project-tile:nth-child(odd) {
     background-color: #f2f2f2; /* Cor de fundo para projetos ímpares */
 }
 
-.project:nth-child(even) {
+.project-tile:nth-child(even) {
     background-color: #e6e6e6; /* Cor de fundo para projetos pares */
 }
 
