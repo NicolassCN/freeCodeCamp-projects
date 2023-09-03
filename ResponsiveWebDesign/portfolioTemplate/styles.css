@@ -35,6 +35,23 @@ nav ul li a {
     text-decoration: none;
 }
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
 /* Style the footer */
 footer {
     background-color: #333;
@@ -43,50 +60,86 @@ footer {
     text-align: center;
 }
 
-/* Add carousel animation to the projects */
-.project-tile {
-    display: inline-block;
-    margin-right: 10px; /* Increase spacing between projects */
-    animation: carousel 30s infinite; /* Make animation slower */
+#projects {
+    background-color: #f2f2f2;
+    padding: 50px;
 }
 
-@keyframes carousel {
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(-100%); /* Adjust animation timing */
-    }
-    20% {
-        transform: translateX(-200%);
-    }
-    30% {
-        transform: translateX(-300%);
-    }
-    40% {
-        transform: translateX(-400%);
-    }
-    50% {
-        transform: translateX(-500%);
-    }
-    60% {
-        transform: translateX(-600%);
-    }
-    70% {
-        transform: translateX(-700%);
-    }
-    80% {
-        transform: translateX(-800%);
-    }
-    90% {
-        transform: translateX(-900%);
-    }
-    100% {
-        transform: translateX(-1000%);
-    }
-    110% {
-        transform: translateX(-100%); /* Repeat the first project */
-    }
+#projects h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.project p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.project:nth-child(odd) {
+    background-color: #f2f2f2; /* Cor de fundo para projetos ímpares */
+}
+
+.project:nth-child(even) {
+    background-color: #e6e6e6; /* Cor de fundo para projetos pares */
+}
+
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#contact button {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #ddd;
 }
 
 /* Add media query */
