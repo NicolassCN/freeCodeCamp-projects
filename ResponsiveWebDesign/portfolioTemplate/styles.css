@@ -1,8 +1,7 @@
 /* Add styles for the portfolio */
-
-/* Set a nice background color */
 body {
     background-color: #f2f2f2;
+    height: 100vh; /* Set height equal to viewport height */
 }
 
 /* Add some padding to the sections */
@@ -15,6 +14,9 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    position: fixed; /* Navbar always at the top of the viewport */
+    top: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -39,4 +41,74 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+/* Add carousel animation to the projects */
+.project-tile {
+    display: inline-block;
+    margin-right: 10px; /* Increase spacing between projects */
+    animation: carousel 30s infinite; /* Make animation slower */
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-100%); /* Adjust animation timing */
+    }
+    20% {
+        transform: translateX(-200%);
+    }
+    30% {
+        transform: translateX(-300%);
+    }
+    40% {
+        transform: translateX(-400%);
+    }
+    50% {
+        transform: translateX(-500%);
+    }
+    60% {
+        transform: translateX(-600%);
+    }
+    70% {
+        transform: translateX(-700%);
+    }
+    80% {
+        transform: translateX(-800%);
+    }
+    90% {
+        transform: translateX(-900%);
+    }
+    100% {
+        transform: translateX(-1000%);
+    }
+    110% {
+        transform: translateX(-100%); /* Repeat the first project */
+    }
+}
+
+/* Add media query */
+@media (max-width: 768px) {
+    /* Add styles for smaller screens */
+    body {
+        padding: 20px;
+    }
+    
+    section {
+        padding: 30px;
+    }
+    
+    .project-tile {
+        margin-right: 5px;
+    }
+}
+
+/* Edited Code */
+section#welcome-section {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    padding: 50px;
 }
